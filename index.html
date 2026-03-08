@@ -6,20 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hallen Vinicius</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-
-    <h1>HALLEN VINICIUS</h1>
-
+    <img src="assets/profile.jpg" alt="Profile Picture" class="profile-pic">
+    <h2>Hallen Vinicius</h2>
     <div class="linker">
-        <div>
-            <a href="https://github.com/hlvini" target="_blank"> GitHub</a> |
-            <a href="https://www.linkedin.com/in/hallen-v/" target="_blank"> Linkedin</a>
-        </div>
-        <span>hallen.vnx@gmail.com</span>
+        <a href="https://github.com/hallenv" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/hallen-v/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:hallen.vnx@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
-
+    <div class="project-grid">
+        <div class="project">
+            <h3>Escavador Orkut</h3>
+            <p>Ferramenta que busca automaticamente palavras-chave em páginas arquivadas do Orkut na Wayback Machine.
+            </p>
+            <a href="https://github.com/hallenv/orkut-excavator">Ver no GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Acervo de Scripts do Vini</h3>
+            <p>Coleção de scripts feitos em Python e Bash para automação de tarefas relacionadas a sistemas Linux.</p>
+            <a href="https://github.com/hallenv/vini-script-stash">Ver no GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Simplesmente OSINT</h3>
+            <p>Série de scripts de OSINT para estudo e aprendizado de técnicas de coleta de informações.</p>
+            <a href="https://github.com/hallenv/osint-essentials">Ver no GitHub</a>
+        </div>
+    </div>
+    <script>
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (isDark) document.body.classList.add('dark-mode');
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            e.matches ? document.body.classList.add('dark-mode') : document.body.classList.remove('dark-mode');
+        });
+    </script>
 </body>
 
 </html>
