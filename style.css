@@ -12,7 +12,12 @@ body {
     min-height: 100vh;
     overflow: hidden;
     background-color: #C4D8E2;
-    color: #fff;
+    color: #000000;
+}
+
+.about p {
+    color: #000000;
+    text-align: left;
 }
 
 .profile-pic {
